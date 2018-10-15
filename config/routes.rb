@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'capacities/new'
+
+  get 'areas/new'
+
+  get 'category/new'
+
+  get 'eventtypes/new'
+
+  get 'party/new'
+
   get 'commercialtransaction/new'
 
   get 'companyprofile/new'
