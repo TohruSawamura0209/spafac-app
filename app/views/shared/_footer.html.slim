@@ -49,7 +49,7 @@ footer
           li
             = link_to t('.searching.area'), '#'
           li
-            = link_to t('.searching.human'), new_inquiry_url
+            = link_to t('.searching.human'), '#'
           li
             = link_to t('.searching.hall'), '#'
           li
@@ -59,21 +59,21 @@ footer
           = t '.spafacabout.title'
         ul.list-unstyled
           li
-            = link_to t('.spafacabout.guide'), 'http://spafac.sa-m.net/guide'
+            = link_to t('.spafacabout.guide'), guide_new_url
           li
-            = link_to t('.spafacabout.explanation'), "/app/views/contact/inquiry.blade.php"
+            = link_to t('.spafacabout.explanation'), registration_registration_url
           li
-            = link_to t('.spafacabout.agreement'), '#'
+            = link_to t('.spafacabout.agreement'), 
           li
-            = link_to t('.spafacabout.lodgingagreement'), '#'
+            = link_to t('.spafacabout.lodgingagreement'), lodgingagreement_new_url
           li
-            = link_to t('.spafacabout.guestagreement'), '#' 
+            = link_to t('.spafacabout.guestagreement'), lodgingguests_new_url
           li
-            = link_to t('.spafacabout.privacy'), '#'
+            = link_to t('.spafacabout.privacy'), privacypolicy_new_url
           li
-            = link_to t('.spafacabout.settlement'), '#'
+            = link_to t('.spafacabout.settlement'), flowsettlement_flowsettlement_url
           li
-            = link_to t('.spafacabout.contact'), '#'
+            = link_to t('.spafacabout.contact'), new_inquiry_url
     hr.hide--sp
     .row
       .col-sm-4.hide--sp
@@ -85,16 +85,16 @@ footer
             i.fa.fa-facebook
         li
           = link_to '#' do
-            i.fa.fa-google-plus
-        li
-          = link_to '#' do
             i.fa.fa-twitter
         li
           = link_to '#' do
             i.fa.fa-instagram
-        li
+       / li
           = link_to '#' do
-            i.fa.fa-pinterest
+            i.fa.fa-google-plus /
+       / li
+          = link_to '#' do
+            i.fa.fa-pinterest /
         <p>サービスその他に関するお問い合わせ</p>
         <a href="/inquiry">info@spafac.com</a>
       .col-sm-4.hide--sp

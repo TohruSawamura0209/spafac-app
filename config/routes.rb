@@ -1,4 +1,16 @@
 Rails.application.routes.draw do
+  get 'privacypolicy/new'
+
+  get 'lodgingguests/new'
+
+  get 'lodgingagreement/new'
+
+  get 'guide/new'
+
+  get 'flowsettlement/flowsettlement'
+
+  get 'registration/registration'
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
