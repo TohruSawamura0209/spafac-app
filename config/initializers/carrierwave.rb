@@ -22,8 +22,8 @@ CarrierWave.configure do |config|
 case Rails.env
 when 'production'
   Dotenv.load
-  config.fog_directory = puts ENV['AWS_S3_BUCKET']
-  config.asset_host = puts ENV['AWS_S3_URL']
+  config.fog_directory = ENV['AWS_S3_BUCKET']
+  config.asset_host = ENV['AWS_S3_URL']
 
 #when 'development'
 #  config.fog_directory = puts ENV['AWS_S3_BUCKET']
