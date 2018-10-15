@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'commercialtransaction/new'
+
+  get 'companyprofile/new'
+
+  get 'comingsoon/new'
+
   get 'privacypolicy/new'
 
   get 'lodgingguests/new'
