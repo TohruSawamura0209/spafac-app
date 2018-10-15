@@ -370,10 +370,12 @@ ja:
         etc: その他
       searching:
         title: カテゴリーから探す
-        area: エリアから探す
-        human: 人数から探す
-        hall: 会場タイプから探す
-        equipment: 設備から探す
+        eventtypes: 目的から探す
+        category: カテゴリから探す
+        areas: エリアから探す
+        capacities: 人数から探す
+        spacetype: 会場タイプから探す
+        amenities: 設備から探す
       spafacabout:
         title: スペースファクトリーについて
         guide: ご利用ガイド

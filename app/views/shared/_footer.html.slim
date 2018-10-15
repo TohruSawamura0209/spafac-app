@@ -47,13 +47,17 @@ footer
           = t '.searching.title'
         ul.list-unstyled
           li
-            = link_to t('.searching.area'), '#'
+            = link_to t('.searching.eventtypes'), eventtypes_new_url
           li
-            = link_to t('.searching.human'), '#'
+            = link_to t('.searching.category'), category_new_url
           li
-            = link_to t('.searching.hall'), '#'
+            = link_to t('.searching.areas'), areas_new_url
           li
-            = link_to t('.searching.equipment'), '#'
+            = link_to t('.searching.capacities'), capacities_new_url
+          li
+            = link_to t('.searching.spacetype'), spacetype_new_url
+          li
+            = link_to t('.searching.amenities'), amenities_new_url
       .col-sm-4.hide--sp
         h5
           = t '.spafacabout.title'
@@ -63,7 +67,7 @@ footer
           li
             = link_to t('.spafacabout.explanation'), registration_registration_url
           li
-            = link_to t('.spafacabout.agreement'), 
+            = link_to t('.spafacabout.agreement'), '#'
           li
             = link_to t('.spafacabout.lodgingagreement'), lodgingagreement_new_url
           li
@@ -89,12 +93,6 @@ footer
         li
           = link_to 'http://spafac.sa-m.net/https://www.instagram.com/spafacstaff' do
             i.fa.fa-instagram
-       / li
-          = link_to '#' do
-            i.fa.fa-google-plus /
-       / li
-          = link_to '#' do
-            i.fa.fa-pinterest /
         <p>サービスその他に関するお問い合わせ</p>
         <a href="/inquiry">info@spafac.com</a>
       .col-sm-4.hide--sp

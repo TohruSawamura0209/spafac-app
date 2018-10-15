@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'amenities/new'
+
+  get 'spacetype/new'
+
   get 'capacities/new'
 
   get 'areas/new'
