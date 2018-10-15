@@ -1,0 +1,58 @@
+- provide :title, t('.title')
+- provide :description, t('.description')
+- provide :keywords, t('.keywords')
+.hero-wrapper
+  #hero
+    ul#slideshow.list-unstyled
+      - i = 0
+      - @top_page_cover_images.each do |top_page_cover_image|
+        - if i.zero?
+          li.active
+            = image_tag top_page_cover_image.image.url
+        - else
+          li
+            = image_tag top_page_cover_image.image.url
+        - i = i + 1
+  .hero-contents.text-center
+    .va-container.va-container-wh
+      .hero-inner
+        h1#tagline.uppercase.text-jumbo.text-contrast.row-space-1
+          = @top_page_cover_tagline.tagline
+        .col-sm-12
+          #subtitle.h4.text-contrast.row-space-4
+            = @top_page_cover_tagline.sub_tagline
+          .search--sp.show--sp
+            #sp-search-field.input-addon
+              span.input-stem.input-large.fake-search-field
+                = t '.search'
+              i.input-suffix.btn.btn-primary.fa.fa-full.fa-search
+          a.guest-flow-trigger.btn.btn-large.btn-transparent.hide--sp[href="#"]
+            = t '.flow'
+        .hero-search.hide--sp
+          .col-xs-12
+            = render partial: 'form'
+= render partial: 's1_lookingup'
+= render partial: 's2_topics'
+= render partial: 's3_welcome'
+= render partial: 's4_flow' 
+= render partial: 'b1_banner'       
+= render partial: 's5_staff'
+= render partial: 's6_campaign'
+= render partial: 'b2_banner'
+= render partial: 's7_sales'
+= render partial: 's8_party'
+= render partial: 'b3_banner'
+= render partial: 's9_conference'
+= render partial: 's10_event'
+= render partial: 'b4_banner'
+= render partial: 's11_ex'
+= render partial: 's12_per'
+= render partial: 'b5_banner'
+= render partial: 's13_lodging'
+= render partial: 's14_loce'
+= render partial: 'b5_banner'
+= render partial: 's15_marry'
+= render partial: 's16_parking'
+= render partial: 's17_sports'
+= render partial: 'discovery', locals: {discovery_images: @top_page_discovery_images}
+= render partial: 'belt', locals: {belt_image: @top_page_belt_image}

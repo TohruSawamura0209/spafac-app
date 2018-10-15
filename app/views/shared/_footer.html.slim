@@ -1,0 +1,110 @@
+footer
+  .footer-content-container
+    .row
+      .col-sm-3.hide--sp
+        form name="lang_selector"
+          select name="langs"
+            - I18n.available_locales.each do |l|
+              option [value="#{i18n_url_for(params.merge(locale: l))}" selected=(l if l == I18n.locale)] = Settings.langs[l].to_s
+      .col-sm-3.hide--sp
+        form name="lang_selector"
+          select name="langs"
+      .col-sm-3.hide--sp
+        form name="lang_selector"
+          select name="langs"
+    hr.hide--sp
+    .row
+      .col-sm-4.hide--sp
+        h5
+          = t '.purpose.title'
+        ul.list-unstyled
+          li
+            = link_to t('.purpose.sles'), '#'
+          li
+            = link_to t('.purpose.party'), new_inquiry_url
+          li
+            = link_to t('.purpose.office'), '#'
+          li
+            = link_to t('.purpose.event'), '#'
+          li
+            = link_to t('.purpose.exhibition'), '#'
+          li
+            = link_to t('.purpose.musical'), '#'
+          li
+            = link_to t('.purpose.stay'), '#'
+          li
+            = link_to t('.purpose.photographing'), '#'
+          li
+            = link_to t('.purpose.marriage'), '#'
+          li
+            = link_to t('.purpose.parking'), '#'
+          li
+            = link_to t('.purpose.sport'), '#'
+          li
+            = link_to t('.purpose.etc'), '#'
+      .col-sm-4.hide--sp
+        h5
+          = t '.searching.title'
+        ul.list-unstyled
+          li
+            = link_to t('.searching.area'), '#'
+          li
+            = link_to t('.searching.human'), new_inquiry_url
+          li
+            = link_to t('.searching.hall'), '#'
+          li
+            = link_to t('.searching.equipment'), '#'
+      .col-sm-4.hide--sp
+        h5
+          = t '.spafacabout.title'
+        ul.list-unstyled
+          li
+            = link_to t('.spafacabout.guide'), '#'
+          li
+            = link_to t('.spafacabout.explanation'), new_inquiry_url
+          li
+            = link_to t('.spafacabout.agreement'), '#'
+          li
+            = link_to t('.spafacabout.lodgingagreement'), '#'
+          li
+            = link_to t('.spafacabout.guestagreement'), '#' 
+          li
+            = link_to t('.spafacabout.privacy'), '#'
+          li
+            = link_to t('.spafacabout.settlement'), '#'
+          li
+            = link_to t('.spafacabout.contact'), '#'
+    hr.hide--sp
+    .row
+      .col-sm-4.hide--sp
+       h5
+        = t '.social_media.title'
+       ul.list-unstyled.list-inline
+        li
+          = link_to '#' do
+            i.fa.fa-facebook
+        li
+          = link_to '#' do
+            i.fa.fa-google-plus
+        li
+          = link_to '#' do
+            i.fa.fa-twitter
+        li
+          = link_to '#' do
+            i.fa.fa-instagram
+        li
+          = link_to '#' do
+            i.fa.fa-pinterest
+        <p>サービスその他に関するお問い合わせ</p>
+        <a href="/inquiry">info@spafac.com</a>
+      .col-sm-4.hide--sp
+        ul.list-unstyled
+          li
+            = link_to t('.companyoutline.use'), new_inquiry_url
+          li
+            = link_to t('.companyoutline.management'), '#'
+          li
+            = link_to t('.companyoutline.specific'), '#'
+    hr.hide--sp
+    #copyright.row-space-top-2.text-center
+      = t '.copyright'
