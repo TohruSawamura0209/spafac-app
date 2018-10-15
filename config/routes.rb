@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'service/new'
+
   get 'amenities/new'
 
   get 'spacetype/new'
