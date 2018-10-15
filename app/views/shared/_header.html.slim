@@ -85,11 +85,14 @@
     - else
       ul.nav.pull-right
         li#guide.pull-left
-          = link_to new_user_registration_path,  rel: "nofollow" do
+          = link_to "http://spafac.sa-m.net/guide",  rel: "nofollow" do
             = t '.guide'
-        li#sign_up.pull-left
-          = link_to new_user_registration_path, rel: "nofollow" do
+        li#help.pull-left
+          = link_to "http://spafac.sa-m.net/help", rel: "nofollow" do
             = t '.help'
+        li#contact.pull-left
+          = link_to "http://spafac.sa-m.net/inquiry", rel: "nofollow" do
+            = t '.contact'
         li#sign_up.pull-left
           = link_to new_user_registration_path, rel: "nofollow" do
             = t '.owner'
