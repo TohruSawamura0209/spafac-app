@@ -45,6 +45,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
     hash[:uid] = User.create_unique_string
     super
   end
+  
   def update_needs_confirmation?(resource, previous)
     resource.respond_to?(:pending_reconfirmation?) &&
     resource.pending_reconfirmation? &&
