@@ -67,7 +67,7 @@ footer
           li
             = link_to t('.spafacabout.explanation'), registration_registration_url
           li
-            = link_to t('.spafacabout.agreement'), '#'
+            = link_to t('.spafacabout.agreement'), service_new_url
           li
             = link_to t('.spafacabout.lodgingagreement'), lodgingagreement_new_url
           li
@@ -91,18 +91,17 @@ footer
           = link_to 'https://twitter.com/Spafac_staff' do
             i.fa.fa-twitter
         li
-          = link_to 'http://spafac.sa-m.net/https://www.instagram.com/spafacstaff' do
+          = link_to 'https://www.instagram.com/spafacstaff/' do
             i.fa.fa-instagram
-        <p>サービスその他に関するお問い合わせ</p>
-        <a href="/inquiry">info@spafac.com</a>
+        <a href="/inquiry">サービスその他に関するお問い合わせこちら</a>
       .col-sm-4.hide--sp
         ul.list-unstyled
           li
             = link_to t('.companyoutline.use'), comingsoon_new_url
           li
-            = link_to t('.companyoutline.management'), '#'
+            = link_to t('.companyoutline.management'), companyprofile_new_url
           li
-            = link_to t('.companyoutline.specific'), '#'
+            = link_to t('.companyoutline.specific'), companyprofile_new_url
     hr.hide--sp
     #copyright.row-space-top-2.text-center
       = t '.copyright'
