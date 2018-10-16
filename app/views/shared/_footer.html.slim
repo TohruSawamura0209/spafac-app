@@ -93,7 +93,9 @@ footer
         li
           = link_to 'https://www.instagram.com/spafacstaff/' do
             i.fa.fa-instagram
+        <p>
         <a href="/inquiry">サービスその他に関するお問い合わせこちら</a>
+        </p>
       .col-sm-4.hide--sp
         ul.list-unstyled
           li
@@ -101,7 +103,7 @@ footer
           li
             = link_to t('.companyoutline.management'), companyprofile_new_url
           li
-            = link_to t('.companyoutline.specific'), companyprofile_new_url
+            = link_to t('.companyoutline.specific'), commercialtransaction_new_url
     hr.hide--sp
     #copyright.row-space-top-2.text-center
       = t '.copyright'
