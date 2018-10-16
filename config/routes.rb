@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'mid_nav/new'
+
   get 'service/new'
 
   get 'amenities/new'
