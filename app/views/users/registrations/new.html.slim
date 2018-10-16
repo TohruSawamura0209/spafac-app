@@ -34,26 +34,26 @@
               .row-space-2.row-space-top-2
                 small
                   = t '.text0'
-                  = link_to t('.terms_of_use'), "#"
+                  = link_to t('.terms_of_use'), service_new_url
                   | 、
-                  = link_to t('.privacy'), "#"
+                  = link_to t('.lodgingagreement'), lodgingagreement_new_url
                   | 、
-                  = link_to t('.payback'), "#"
+                  = link_to t('.lodgingguests'), lodgingguests_new_url
                   | 、
-                  = link_to t('.host'), "#"
+                  = link_to t('.privacy'), privacypolicy_new_url
                   = t '.text1'
               .form-actions
                 = f.button :submit, t('.submit'), class: "btn btn-primary btn-large btn-block"
           .policy-wrapper.row-space-top-2
             small
               = t '.text0'
-              = link_to t('.terms_of_use'), "#"
+              = link_to t('.terms_of_use'), service_new_url
               | 、
-              = link_to t('.privacy'), "#"
+              = link_to t('.lodgingagreement'), lodgingagreement_new_url
               | 、
-              = link_to t('.payback'), "#"
+              = link_to t('.lodgingguests'), lodgingguests_new_url
               | 、
-              = link_to t('.host'), "#"
+              = link_to t('.privacy'), privacypolicy_new_url
               = t '.text1'
         .card-body
           p.small1

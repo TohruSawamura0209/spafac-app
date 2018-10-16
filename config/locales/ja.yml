@@ -851,10 +851,10 @@ ja:
         submit: 登録する
         text0: 登録することで、
         text1: に同意したことになります。
-        terms_of_use: サービス利用規約
-        privacy: 個人情報保護ポリシー
-        payback: 返金ポリシー
-        host: ホスト保証規約
+        terms_of_use: 利用規約
+        lodgingagreement: 宿泊所掲載規約
+        lodgingguests: 宿泊ゲスト規約
+        privacy: プライバシーポリシー
         registered: すでにメンバーですか？
         login: ログイン
       edit:
