@@ -4,14 +4,16 @@ footer
       .col-sm-3.hide--sp
         form name="lang_selector"
           select name="langs"
+            link_to new_user_registration_path, rel: "nofollow" do
+            t '.owner'
+      .col-sm-3.hide--sp
+        form name="lang_selector"
+          select name="langs"
+      //.col-sm-3.hide--sp
+        form name="lang_selector"
+          select name="langs"
             - I18n.available_locales.each do |l|
-              option [value="#{i18n_url_for(params.merge(locale: l))}" selected=(l if l == I18n.locale)] = Settings.langs[l].to_s
-      .col-sm-3.hide--sp
-        form name="lang_selector"
-          select name="langs"
-      .col-sm-3.hide--sp
-        form name="lang_selector"
-          select name="langs"
+              option [value="#{i18n_url_for(params.merge(locale: l))}" selected=(l if l == I18n.locale)] = Settings.langs[l].to_s //
     hr.hide--sp
     .row
       .col-sm-4.hide--sp
