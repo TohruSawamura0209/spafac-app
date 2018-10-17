@@ -4,9 +4,11 @@
             <h1>パーティースペース</h1>
         </div>
     </div>
+</section>
 
 = render partial: 'mid_nav/midnav'
 
+<section class="party_page">
     <div class="three_list party_lank">
         <h2>パーティスペースランキングTop3</h2>
             <ul>
@@ -16,7 +18,7 @@
                 <p>小さいスペース</p>
                 <p>1～5人 東京都新宿区新宿<span class="s-one"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span>0000件</p>
                 <p>新宿駅より徒歩1分</p>
-           </div>
+                </div>
                 </a>
             </li>
             <li><a href="/search"><img src="/assets/images/party/okan02.png" class="okan" alt="2">
@@ -25,22 +27,20 @@
                 <p>小さいスペース</p>
                 <p>1～5人 東京都新宿区新宿<span class="s-two"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span>0000件</p>
                 <p>新宿駅より徒歩1分</p>
-           </div></a>
-           </li>
-           <li><a href="/search"><img src="/assets/images/party/okan03.png" class="okan" alt="3">
+                </div></a>
+            </li>
+            <li><a href="/search"><img src="/assets/images/party/okan03.png" class="okan" alt="3">
                 <img src="/assets/images/party/party_img01.jpg" alt="party">
-           <div class="readme">
+            <div class="readme">
                 <p>小さいスペース</p>
                 <p>1～5人 東京都新宿区新宿<span class="s-three"><i>★</i><i>★</i><i>★</i><i>★</i><i>★</i></span>0000件</p>
                 <p>新宿駅より徒歩1分</p>
-           </div></a>
-           </li>
-           </ul>
+                </div></a></li>
+        </ul>
         <p class="more_lank"><a href="/search">ランキングをもっと見る</a></p>
-   </div>
+        </div>
 
-   <div class="three_list new_review">
-    <h2>新着レビュー</h2>
+        <h2>新着レビュー</h2>
         <ul>
            <li>
            <img src="/assets/images/party/party_icon01.png" alt="review">
@@ -71,12 +71,11 @@
                <p class="date">登校日 2018/07/04</p>
                <p>10名程で会社の同僚のフェアウェルパーティーをしました。 非常に満足しています。ありがとうございました。 ・全体的に掃除が行き届いてきれいでした ・調理道具類も充実していました ・ゴミ　・・・</p>
            </li>
-
-       </ul>
+        </ul>
     <p class="more_lank"><a href="/search">新着レビューをもっと読む</a></p>
-   </div>
-
-   <div class="three_list summary">
+    </div>
+    
+    <div class="three_list summary">
     <h2>関連するまとめ</h2>
        <ul>
            <li>
@@ -93,7 +92,7 @@
            </li>
        </ul>
     <p class="more_lank"><a href="/search">関連するまとめをもっと見る</a></p>
-   </div>
+    </div>
 
     <div class="party_search_list attention_area">
         <h2>注目のエリア</h2>
@@ -471,43 +470,59 @@
 </tr>
 </tbody>
 </table>
-<script>
-$(function() {
-	$('label.open').on('click', function () {
-	$(this).parents('tbody').toggleClass("MaxHeight");
-
-if ($(this).parents('tbody').hasClass("MaxHeight")) {
-	$(this).html("▲とじる");
-	$(this).css({"bottom":"1em","top":"inherit"});
-
-  } else if (!$(this).parents('tbody').hasClass("MaxHeight")) {
-	$(this).html("▼ひらく");
-	$(this).css({"top":"1em","bottom":"inherit"});
-}
-	
-    });
-});
-</script>
+</div>
 </div>
 
-    </div>
-
     <div class="party_search_list">
-   <h2>収容人数から探す</h2>
-   <div class="wrap party_abt">
-   <p><a href="/search">1人</a><a href="/search">5人</a><a href="/search">10人</a><a href="/search">20人</a><a href="/search">30人</a><a href="/search">40人</a><a href="/search">50人</a><a href="/search">100人</a><a href="/search">200人</a><a href="/search">300人</a><a href="/search">400人</a><a href="/search">500人</a><a href="/search">1000人</a><a href="/search">10000人</a></p>
-   </div>
+    <h2>収容人数から探す</h2>
+    <div class="wrap party_abt">
+    <p><a href="/search">1人</a>
+    <a href="/search">5人</a>
+    <a href="/search">10人</a>
+    <a href="/search">20人</a>
+    <a href="/search">30人</a>
+    <a href="/search">40人</a>
+    <a href="/search">50人</a>
+    <a href="/search">100人</a>
+    <a href="/search">200人</a>
+    <a href="/search">300人</a>
+    <a href="/search">400人</a>
+    <a href="/search">500人</a>
+    <a href="/search">1000人</a>
+    <a href="/search">10000人</a></p>
     </div>
-
+    </div>
     <div class="party_search_list bgcg">
-   <h2>キーワードから探す</h2>
-   <div class="wrap party_abt">
-
-<p><a href="/search">イベント</a><a href="/search">結婚式場</a><a href="/search">オフィス</a><a href="/search">ホール</a><a href="/search">貸会議室</a><a href="/search">スタジオ</a><a href="/search">カフェ</a><a href="/search">レストラン</a><a href="/search">映画館</a>
-<a href="/search">ギャラリー</a><a href="/search">バー</a><a href="/search">スポーツ施設</a><a href="/search">娯楽施設</a><a href="/search">ホテル</a><a href="/search">住宅</a><a href="/search">倉庫</a><a href="/search">ワイナリー</a><a href="/search">蔵</a><a href="/search">百貨店</a><a href="/search">オフィス街</a><a href="/search">商店街</a><a href="/search">アーケード</a><a href="/search">ロードサイド</a><a href="/search">駅近</a><a href="/search">ロータリー</a><a href="/search">軒先</a><a href="/search">駅地下</a></p> 
-   </div>
-
+    <h2>キーワードから探す</h2>
+    <div class="wrap party_abt">
+    <p><a href="/search">イベント</a>
+    <a href="/search">結婚式場</a>
+    <a href="/search">オフィス</a>
+    <a href="/search">ホール</a>
+    <a href="/search">貸会議室</a>
+    <a href="/search">スタジオ</a>
+    <a href="/search">カフェ</a>
+    <a href="/search">レストラン</a>
+    <a href="/search">映画館</a>
+    <a href="/search">ギャラリー</a>
+    <a href="/search">バー</a>
+    <a href="/search">スポーツ施設</a>
+    <a href="/search">娯楽施設</a>
+    <a href="/search">ホテル</a>
+    <a href="/search">住宅</a>
+    <a href="/search">倉庫</a>
+    <a href="/search">ワイナリー</a>
+    <a href="/search">蔵</a>
+    <a href="/search">百貨店</a>
+    <a href="/search">オフィス街</a>
+    <a href="/search">商店街</a>
+    <a href="/search">アーケード</a>
+    <a href="/search">ロードサイド</a>
+    <a href="/search">駅近</a>
+    <a href="/search">ロータリー</a>
+    <a href="/search">軒先</a>
+    <a href="/search">駅地下</a>
+    </p> 
     </div>
-
-
+</div>
 </section>
