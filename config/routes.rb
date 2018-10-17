@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'search/new'
+
   get 'inquiry/new'
 
   get 'mid_nav/new'
