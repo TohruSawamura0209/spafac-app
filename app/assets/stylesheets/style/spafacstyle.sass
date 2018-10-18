@@ -779,7 +779,7 @@ section.pattern_1 a.detail
 #reg_now #reg_now_box a, #reg_now_5 #reg_now_box a
   background: url(/assets/mypage/img/arrow2.png) no-repeat #000
   background-position: 90%
-  padding: 10px 40px 10px 20px
+  padding: 10px 20px
   color: #fff
   display: inline-block
   font-size: 1.8rem
@@ -914,8 +914,150 @@ section.pattern_1 a.detail
     width: auto
     margin: 8px
 
+/*---------------- footer --------------*/  
 
-/*----------------------------------- スマホ設定 -----------------------------------*/  
+.footer-content-container02
+    max-width: 960px
+    margin: 80px auto 0
+    padding: 0 15px
+
+.footer-entrybutton
+  width: 190px
+  float: left
+  padding-left: 24px
+
+  /* button */
+.button-pink
+  display: inline-block
+  padding: 15px 30px
+  background: #fa8b9f
+  color: #FFF
+  border-radius: 3px
+  border: none
+  line-height: 1
+  cursor: pointer
+  border-bottom: 1px solid #fa8b9f
+  text-align: center
+  font-weight: bold
+
+.button-pink:hover 
+  background: #8fea86
+  border-bottom: 1px solid #9add92
+
+.button-blue
+  display: inline-block
+  padding: 15px 20px
+  background: #4abfe6
+  color: #FFF
+  border-radius: 3px
+  text-align: center
+  font-weight: bold
+  border: none
+  line-height: 1
+  cursor: pointer
+  border-bottom: 1px solid #42a9cc
+
+.button-blue:hover
+  background: #76cce8
+  border-bottom: 1px solid #89c7dc
+
+.site-header__sponsoredmatch
+    color: #fff
+    padding: 0 15px
+    height: 60px
+
+.site-header__sponsoredmatch_type4
+  background: linear-gradient(90deg,#db95dd 0,#c399e1 30%,#a59de9)
+
+.site-header__sponsoredmatch-container
+    display: table
+    margin: 0 auto
+    height: 100%
+
+.site-header__sponsoredmatch-description-box
+    display: table-cell
+    vertical-align: middle
+
+.site-header__sponsoredmatch-title-box
+    display: table-cell
+    vertical-align: middle
+
+.site-header__sponsoredmatch-title
+    font-size: 21px
+    font-weight: 700
+    margin: 0 0 4px 5px
+
+.site-header__sponsoredmatch-lead
+    font-size: 13px
+    margin: 0 0 0 5px
+
+.site-header__sponsoredmatch-button-box
+    display: table-cell
+    vertical-align: middle
+
+.site-header__sponsoredmatch-button-inner
+    display: table
+    border-collapse: separate
+    border-spacing: 10px 0
+
+.site-header__sponsoredmatch-button-detail
+    display: table-cell
+    border: 1px solid #fff
+    border-radius: 3px
+    text-align: center
+    font-weight: 700
+    line-height: 1
+    cursor: pointer
+    white-space: nowrap
+    height: 30px
+    overflow: hidden
+
+.site-header__sponsoredmatch-button-detail a
+    color: #fff
+    height: 30px
+
+.site-header__sponsoredmatch-button-box a
+    display: block
+    padding: 8px 15px
+  
+.staff-box
+    margin-bottom: 0
+
+.staff-top-area
+    border-radius: 3px
+    position: relative
+    margin-bottom: 16px
+    margin: 0
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1)
+
+staff-top-area.unit-st
+    background: none
+    padding-bottom: 0
+
+.staff-linkbox img
+    width: 100%
+
+.staff-box img
+    vertical-align: bottom
+    border-radius: 3px 3px 0 0
+
+.staff-title 
+    width: 100%
+    padding: 8px
+    margin-top: 0
+    line-height: 1.4
+    overflow: hidden
+    text-overflow: ellipsis
+    text-align: left
+    font-size: 13px
+    font-weight: 700
+    border-radius: 0 0 3px 3px
+    color: #fff
+  
+
+/*----------------------------------------------------------------------*/
+  // Smartphone設定 //
+/*----------------------------------------------------------------------*/
 
 @media (max-width: 1200px) 
   .wrap 
@@ -1270,7 +1412,8 @@ section.pattern_1 a.detail
 
   #reg_now, #reg_now_5
     min-height: 50vw
-    background: url(/assets/mypage/img/reg-photo.jpg) top left no-repeat
+    // background: url(/assets/mypage/img/reg-photo.jpg) top left no-repeat //
+    background-color: #00ff66
     background-size: cover
     padding: 3em 0
     display: flex
@@ -2143,50 +2286,3 @@ section.pattern_1 a.detail
 
   nav.party_search form div i
     display: none
-
-/*---------------- footer --------------*/  
-
-.footer-content-container02
-    max-width: 960px
-    margin: 80px auto 0
-    padding: 0 15px
-
-.footer-entrybutton
-  width: 190px
-  float: left
-  padding-left: 24px
-
-  /* button */
-.button-pink
-  display: inline-block
-  padding: 15px 30px
-  background: #fa8b9f
-  color: #FFF
-  border-radius: 3px
-  border: none
-  line-height: 1
-  cursor: pointer
-  border-bottom: 1px solid #fa8b9f
-  text-align: center
-  font-weight: bold
-
-.button-pink:hover 
-  background: #8fea86
-  border-bottom: 1px solid #9add92
-
-.button-blue
-  display: inline-block
-  padding: 15px 20px
-  background: #4abfe6
-  color: #FFF
-  border-radius: 3px
-  text-align: center
-  font-weight: bold
-  border: none
-  line-height: 1
-  cursor: pointer
-  border-bottom: 1px solid #42a9cc
-
-.button-blue:hover
-  background: #76cce8
-  border-bottom: 1px solid #89c7dc
