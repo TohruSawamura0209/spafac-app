@@ -1053,11 +1053,133 @@ staff-top-area.unit-st
     font-weight: 700
     border-radius: 0 0 3px 3px
     color: #fff
-  
 
-/*----------------------------------------------------------------------*/
-  // Smartphone設定 //
-/*----------------------------------------------------------------------*/
+
+.a__top-units
+    color: #000
+
+.md-top-units
+    position: relative
+    margin-bottom: 16px
+    padding-bottom: 8px
+    border-radius: 3px
+    background: #fff
+    margin: 0
+    transition: box-shadow .2s cubic-bezier(.4,0,1,1),background-color .2s cubic-bezier(.4,0,.2,1),color .2s cubic-bezier(.4,0,.2,1)
+
+.md-top-units__image
+    position: relative
+    overflow: hidden
+    border-radius: 2px 2px 0 0
+    height: 230px
+
+.md-top-units .units-ranking
+    left: 10px
+
+.units-ranking__icon
+    width: 38px
+    height: 48px
+    word-wrap: break-word
+    text-align: center
+
+.units-ranking__no1
+    background-color: #f5d02c
+
+.units-ranking
+    position: absolute
+    top: 0
+    left: 16px
+    z-index: 1
+
+.units-ranking__icon-body
+    border-left: 1px solid hsla(0,0%,100%,.6)
+    border-right: 1px solid hsla(0,0%,100%,.6)
+    position: absolute
+    top: 0
+    left: 3px
+    width: 32px
+    height: 56px
+    z-index: 3
+    padding-top: 8px
+    text-align: center
+    background: url(asset-path("service/landing/ranking-icon.png")) 50% 8px no-repeat
+    background-size: 24px 14px
+
+.units-ranking__icon-number
+    display: block
+    font-weight: 700
+    color: #333
+    margin-top: 18px
+
+.md-top-units__image-pict
+    border-radius: 5px
+    position: absolute
+    top: 50%
+    left: 50%
+    -webkit-transform: translate(-50%,-50%)
+    -ms-transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%)
+    overflow: hidden
+    vertical-align: bottom
+    width: 100%
+
+.md-top-units__item-price
+    position: absolute
+    left: 10px
+    bottom: 10px
+    padding: 8px
+    background-color: #000
+    font-size: 16px
+    color: #fff
+    border-radius: 3px
+
+.md-top-units__item-per
+    font-size: 10px
+    font-weight: 400
+
+.md-top-units__price-icon
+    margin-left: 4px
+
+.md-top-units__body
+    margin: 8px 10px 12px
+    position: relative
+
+.md-top-units__body-inner
+    overflow: hidden
+
+.md-top-units__body-title
+    font-size: 14px
+    font-weight: 700
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    margin: 2px 0
+
+.md-top-units__body-info
+    margin: 6px 0 8px
+    font-size: 11px
+    color: #333
+
+.md-top-units__body-info li
+    display: inline-block
+    margin-right: 5px
+
+.md-top-units__body-info i
+    color: #d0d1cf
+
+.fa
+    display: inline-block
+    font: normal normal normal 14px/1 FontAwesome
+    font-size: inherit
+    text-rendering: auto
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.mr5
+    margin-right: 5px
+
+
+/*-------------------- Smartphone設定 ----------------------*/  
 
 @media (max-width: 1200px) 
   .wrap 
