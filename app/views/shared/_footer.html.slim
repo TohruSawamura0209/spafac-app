@@ -1,19 +1,12 @@
 footer
   .footer-content-container
-    .row
-      .col-sm-3.hide--sp
-        form name="lang_selector"
-          select name="langs"
-            link_to new_user_registration_path, rel: "nofollow" do
-            t '.owner'
-      .col-sm-3.hide--sp
-        form name="lang_selector"
-          select name="langs"
-      //.col-sm-3.hide--sp
-        form name="lang_selector"
-          select name="langs"
-            - I18n.available_locales.each do |l|
-              option [value="#{i18n_url_for(params.merge(locale: l))}" selected=(l if l == I18n.locale)] = Settings.langs[l].to_s //
+        <div class="footer-entrybutton">
+          <a href="/users/sign_up" class="pt15 pb15 w100pa button-pink">会員登録する</a>
+        </div>
+         <div class="footer-entrybutton">
+          <a href="/new" class="pt15 pb15 w100pa button-blue">スペース登録する</a>
+        </div>
+  .footer-content-container02       
     hr.hide--sp
     .row
       .col-sm-4.hide--sp
