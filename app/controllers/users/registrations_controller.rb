@@ -1,10 +1,10 @@
 class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/sign_up
-  def new
-    build_resource({})
-    respond_with self.resource
-  end
+  #def new
+  #  build_resource({})
+  #  respond_with self.resource
+  #end
 
   def create
     build_resource(sign_up_params)
@@ -41,7 +41,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   protected
-  def build_resource(hash=nil)
+  def build_resource(hash={})
     hash[:uid] = User.create_unique_string
     super
   end
