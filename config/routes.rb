@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'area_kansai/areakansai'
+
+  get 'area_notice/area-notice'
+
   get 'search/new'
 
   get 'inquiry/new'
