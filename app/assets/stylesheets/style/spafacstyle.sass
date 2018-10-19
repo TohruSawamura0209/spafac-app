@@ -745,7 +745,8 @@ section.pattern_1 a.detail
 
 #reg_now, #reg_now_5
   height: auto
-  background: url(/assets/mypage/img/reg-photo.jpg) top left no-repeat
+  //background: url(/assets/mypage/img/reg-photo.jpg) top left no-repeat//
+  background-color: #c5d9a0
   background-size: cover
   padding: 3em 0
 
@@ -777,7 +778,7 @@ section.pattern_1 a.detail
   font-weight: bold
 
 #reg_now #reg_now_box a, #reg_now_5 #reg_now_box a
-  background: url(/assets/mypage/img/arrow2.png) no-repeat #000
+  background: url(/assets/mypage/img/arrow2.png) no-repeat #8fc5eb
   background-position: 90%
   padding: 10px 20px
   color: #fff
@@ -792,7 +793,8 @@ section.pattern_1 a.detail
 #reg_now_2
   height: auto
   padding: 2em 0 3em 0
-  background: url(/assets/mypage/img/photo-4.png) top left no-repeat
+  // background: url(/assets/mypage/img/photo-4.png) top left no-repeat
+
   background-size: cover
 
 #reg_now_2 .reg_now_2_title
@@ -822,12 +824,23 @@ section.pattern_1 a.detail
   color: #000
   display: inline-block
 
-#reg_now_3, #reg_now_4
+#reg_now_3
   height: 330px
-  background: url(/assets/mypage/img/photo-28.png) no-repeat
+  // background: url(/assets/mypage/img/photo-28.png) no-repeat
+  background-color: #f7c9d9
   background-size: cover
 
-#reg_now_3 .reg_now_3_title, #reg_now_3 .reg_now_4_title, #reg_now_4 .reg_now_3_title, #reg_now_4 .reg_now_4_title
+#reg_now_4
+  height: 330px
+  // background: url(/assets/mypage/img/photo-28.png) no-repeat
+  background-color: #f2d8a4
+  background-size: cover
+
+#reg_now_3 .reg_now_3_title, #reg_now_3 .reg_now_3_title
+  margin-top: 1em
+  text-align: center
+
+.reg_now_4_title, #reg_now_4, #reg_now_4 .reg_now_4_title
   margin-top: 1em
   text-align: center
 
@@ -853,7 +866,17 @@ section.pattern_1 a.detail
     text-align: center
     margin-top: 30px
 
-#reg_now_3 .reg_now_3_button a, #reg_now_3 .reg_now_4_button a, #reg_now_4 .reg_now_3_button a, #reg_now_4 .reg_now_4_button a
+#reg_now_3 .reg_now_3_button a, #reg_now_3  .reg_now_3_button a
+  background: url(/assets/mypage/img/icon-8.png) no-repeat #fff
+  background-position: 90%
+  font-size: 2rem
+  color: #000
+  display: inline-block
+  font-weight: bold
+  padding: 26px 90px 26px 50px
+  box-shadow: 0 -1px 1px rgba(0, 0, 0, 0.8)
+
+.reg_now_4_button a, #reg_now_4, #reg_now_4 .reg_now_4_button a
   background: url(/assets/mypage/img/icon-8.png) no-repeat #fff
   background-position: 90%
   font-size: 2rem
@@ -868,8 +891,9 @@ section.pattern_1 a.detail
   background-size: cover
 
 #reg_now_5
-  background: url(/assets/mypage/img/reg_photo.png) no-repeat
-  background-size: cover
+  //background: url(/assets/mypage/img/reg_photo.png) no-repeat
+  //background-size: cover
+  background-color: #8fc5eb
 
 #reg_now_5 #reg_now_box
   background: rgba(255,255,255,.5)
