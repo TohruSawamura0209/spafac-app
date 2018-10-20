@@ -7,10 +7,10 @@ class Users::RegistrationsController < Devise::RegistrationsController
   # GET /resource/sign_up
   def new
     build_resource({})
-    yield resource if block_given?
-    respond_with resource
+    respond_with self.resource
   end
-
+  
+  # POST /resource
   def create
     build_resource(sign_up_params)
 
