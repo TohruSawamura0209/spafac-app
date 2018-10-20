@@ -1,7 +1,7 @@
 class DeviseMailer < Devise::Mailer
   helper :application # gives access to all helpers defined within `application_helper`.
   include Devise::Controllers::UrlHelpers # Optional. eg. `confirmation_url`
-  default from: "default-from-email@example.com"
+  default from: "developer@spafac.com"
 
   def send_confirmation_on_create_instructions(record, token, opts={})
     @resource = record

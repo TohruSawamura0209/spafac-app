@@ -1,10 +1,15 @@
 class Users::RegistrationsController < Devise::RegistrationsController
 
+  prepend_before_action :require_no_authentication, only: [:new, :create, :cancel]
+  prepend_before_action :authenticate_scope!, only: [:edit, :update, :destroy]
+  prepend_before_action :set_minimum_password_length, only: [:new, :edit]
+
   # GET /resource/sign_up
-  #def new
-  #  build_resource({})
-  #  respond_with self.resource
-  #end
+  def new
+    build_resource({})
+    yield resource if block_given?
+    respond_with resource
+  end
 
   def create
     build_resource(sign_up_params)
@@ -23,8 +28,8 @@ class Users::RegistrationsController < Devise::RegistrationsController
         respond_with resource, location: after_inactive_sign_up_path_for(resource)
       end
     else
-      clean_up_passwords resource
-      set_minimum_password_length
+      clean_up_passwords resource　
+      set_minimum_password_length　
       flash[:messages] = resource.errors.full_messages
       redirect_to new_user_registration_path, alert: I18n.t('.errors.messages.not_completed', count: resource.errors.size)
     end
@@ -41,7 +46,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
   end
 
   protected
-  def build_resource(hash={})
+  def build_resource(hash=nil)
     hash[:uid] = User.create_unique_string
     super
   end
