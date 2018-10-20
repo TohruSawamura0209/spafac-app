@@ -46,8 +46,16 @@ Rails.application.configure do
 
   # Mailer Setting
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
-  config.action_mailer.delivery_method = :letter_opener
-
+  #config.action_mailer.delivery_method = :letter_opener
+  #config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: 'om1001.coreserver.jp',
+    port: 587,
+    domain: 'om1001.coreserver.jp',
+    user_name:'developer@spafac.com' ,
+    password: 'eRjLiKuK4FuP',
+  }
   config.action_controller.action_on_unpermitted_parameters = :raise
 
 end
